@@ -4,3 +4,8 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"
 
 }
+
+resource "aws_eip" "lb" {
+
+  vpc      = true
+}
